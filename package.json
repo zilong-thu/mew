@@ -19,6 +19,7 @@
   "homepage": "https://github.com/zilong-thu/mew#readme",
   "dependencies": {
     "config": "^1.28.1",
+    "gulp": "^3.9.1",
     "koa": "2.4.1",
     "koa-routeify": "^2.0.0",
     "nunjucks": "^3.0.1",

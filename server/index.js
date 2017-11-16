@@ -20,11 +20,6 @@ app.use(async (ctx, next) => {
   console.log(`${ctx.method} ${ctx.url} - ${ms}`);
 });
 
-// response
-app.use(async ctx => {
-  ctx.body = 'Hello World';
-});
-
 // router
 app.use(router(app, config.route));
 
