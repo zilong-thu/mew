@@ -1,6 +1,9 @@
-module.exports = class Home {
+const Controller = require('../controller');
+
+
+module.exports = class Home extends Controller {
   index(name){
     console.log('haha');
-    this.ctx.body = `Hello ${ name || 'World' }!`;
+    this.ctx.body = this.renderPage('home/index.njk', {title: 'Hello World!'});
   }
 }
