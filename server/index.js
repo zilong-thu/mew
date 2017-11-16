@@ -1,6 +1,8 @@
 const Koa = require('koa');
 const app = new Koa();
 const config = require('config');
+const router = require('koa-routeify');
+
 
 // x-response-time
 app.use(async (ctx, next) => {
@@ -22,6 +24,9 @@ app.use(async (ctx, next) => {
 app.use(async ctx => {
   ctx.body = 'Hello World';
 });
+
+// router
+app.use(router(app, config.route));
 
 const port = config.port || 3000;
 app.listen(port);
