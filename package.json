@@ -1,0 +1,19 @@
+{
+  "name": "mew",
+  "version": "1.0.0",
+  "description": "吸猫社区前端代码",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zilong-thu/mew.git"
+  },
+  "author": "zilong-thu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zilong-thu/mew/issues"
+  },
+  "homepage": "https://github.com/zilong-thu/mew#readme"
+}
