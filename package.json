@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/zilong-thu/mew/issues"
   },
-  "homepage": "https://github.com/zilong-thu/mew#readme"
+  "homepage": "https://github.com/zilong-thu/mew#readme",
+  "dependencies": {
+    "koa": "2.4.1"
+  }
 }
