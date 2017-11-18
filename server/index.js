@@ -18,11 +18,11 @@ app.use(async (ctx, next) => {
   const start = Date.now();
   await next();
   const ms = Date.now() - start;
-  console.log(`${ctx.method} ${ctx.url} - ${ms}`);
+  console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
 });
 
 // static file server
-const staticDir = path.join(__dirname, '../static/');
+const staticDir = path.join(__dirname, '../static');
 console.log('static file dir: ', staticDir);
 app.use(serve(staticDir));
 
