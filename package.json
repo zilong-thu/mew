@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-server": "node ./server/index.js"
+    "dev-server": "./node_modules/.bin/gulp server"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,10 @@
   "dependencies": {
     "config": "^1.28.1",
     "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
     "koa": "2.4.1",
     "koa-routeify": "^2.0.0",
+    "koa-static": "^4.0.2",
     "nunjucks": "^3.0.1",
     "path-to-regexp": "^2.1.0"
   }
