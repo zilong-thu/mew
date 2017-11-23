@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-server": "NODE_ENV=development DEBUG=koa-send,koa-static ./node_modules/.bin/gulp server"
+    "dev-server": "NODE_ENV=development DEBUG=koa-send,koa-static,mew ./node_modules/.bin/gulp server"
   },
   "repository": {
     "type": "git",
@@ -18,13 +18,21 @@
   },
   "homepage": "https://github.com/zilong-thu/mew#readme",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
     "config": "^1.28.1",
+    "debug": "^3.1.0",
     "gulp": "^3.9.1",
     "gulp-nodemon": "^2.2.1",
     "koa": "2.4.1",
     "koa-routeify": "^2.0.0",
     "koa-static": "^4.0.2",
     "nunjucks": "^3.0.1",
-    "path-to-regexp": "^2.1.0"
+    "path-to-regexp": "^2.1.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
+  },
+  "devDependencies": {
+    "webpack": "^3.8.1"
   }
 }
